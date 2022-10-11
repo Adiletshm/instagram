@@ -7,7 +7,7 @@ let postDiscription = document.getElementById("posts__discreption");
 let btnaAddPost = document.getElementById("add-post");
 let btnCloseaAddPost = document.getElementById("close-add-post");
 let addNewPostBtn = document.querySelector(".add__new_post");
-let addPostBlock = document.querySelector(".container");
+let addPostBlock = document.querySelector(".container9");
 
 //  переменные для изменения и редоктирования поста
 // let btnAddCommit = document.getElementById("posts__add-commit");
@@ -148,6 +148,7 @@ function editPost(id, postEditObj) {
 }
 // ! ========================= БЛОК ДЛЯ ДОБАВЛЕНИЯ ПОСТА START ===================
 addNewPostBtn.addEventListener("click", () => {
+  console.log("jhj");
   addPostBlock.style.display = "block";
 });
 btnCloseaAddPost.addEventListener("click", () => {

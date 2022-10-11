@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+/* ! left-menu start  */
+body {
+  background-color: #fafafa;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.div__left {
+  width: 23%;
+  background-color: #ffffff;
+}
+.left_menu {
+  width: 100%;
+}
+.menu {
+  width: 120.3%;
+  background-color: #ffffff;
+  height: 560px;
+  /* position: fixed; */
+  justify-content: space-between;
+  border-right: 1px solid #dbdbdb;
+}
+.div__left img {
+  width: 110px;
+  padding-left: 20px;
+  padding-top: 34px;
+  padding-bottom: 20px;
+}
+#profile {
+  margin-bottom: 20px;
+}
+/* nav {
+  width: 100%;
+} */
+.left_menu ul {
+  display: block;
+  justify-content: left;
+  list-style-type: none;
+}
+.left__menu_item {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  padding-bottom: 13px;
+  width: 75%;
+}
+.add__new_post {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  padding-bottom: 13px;
+  width: 75%;
+}
+.menu__item img {
+  margin-right: 15px;
+}
+.menu__logo {
+  width: 25px;
+}
+.left__menu_item span {
+  left: 10px;
+}
+/* ! left-menu end  */
+
+/* ! centr-cont start */
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  width: 46%;
+  margin: 0 auto;
+  margin-top: 1%;
+}
+.content__item img {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 65px;
+  padding-top: 26px;
+}
+.container {
+  text-decoration: none;
+  font-size: 13px;
+}
+.aaa {
+  justify-content: space-between;
+}
+#more {
+  margin-left: 35px;
+}
+/* ! centr-cont end */
+/* ! ====================== CREATE START ======================= */
+.container9 {
+  width: 55%;
+  margin: 0 auto;
+  display: none;
+}
+
+.posts {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.posts input {
+  padding: 10px;
+  margin: 10px 0;
+}
+#add-post,
+#close-add-post {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 95px;
+}
+/* ? ===================== CREATE END ========================== */
+
+/* ! ===================== READ START ============================= */
+
+#posts #posts__card {
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid black;
+  margin-top: 30px;
+}
+#posts .discreption-text {
+  padding: 0px 13px;
+}
+#posts__card img {
+  width: 100%;
+}
+.icon-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 10px;
+}
+.icon-block p {
+  padding: 0px 3px;
+}
+#posts__card img.icon {
+  width: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+#posts__card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.left__post_card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left__post_card-header .indtagram {
+  border: 1px solid #cc1e4e;
+  box-sizing: content-box;
+  width: 800px;
+  padding: 10px;
+  border-radius: 20px;
+}
+/* ? ============================ READE FINISH =========================== */
+/* ! ============================ EDIT START ============================= */
+
+.main__post-menu {
+  position: fixed;
+  top: 0;
+  background-color: rgba(00, 00, 00, 0.4);
+  width: 45%;
+  height: 100%;
+  display: none;
+}
+
+.main__post-window ul {
+  margin: 270px auto;
+  list-style: none;
+  cursor: pointer;
+  padding: 5px;
+  width: 40%;
+  border: 2px solid white;
+  text-align: center;
+  border-radius: 15px;
+  background-color: white;
+}
+.main__post-window ul li {
+  padding: 5px;
+  font-size: 20px;
+  border-bottom: 2px solid black;
+  margin: 5px;
+  padding: 15px;
+}
+.main__post-window ul .close {
+  border-bottom: none;
+}
+/* ! ============================ MODAL WINDOW START ====================== */
+.main-modal {
+  position: fixed;
+  top: 0;
+  width: 45%;
+  height: 100%;
+  background-color: rgba(00, 00, 00, 0.6);
+  display: none;
+}
+.main-modal_window {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 220px auto;
+}
+.main-modal_window button {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px 0px;
+}
+.main-modal_window input {
+  padding: 10px;
+  margin: 5px 0px;
+}
+/* ? ============================ MODAL WINDOW END = ====================== */
+/* ? ============================ EDIT FINISH ============================= */
+/* ? ==================== center block end ====================  */
+/* ! burger-menu start */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center; /* центрируем содержимое кнопки */
+  position: fixed;
+  justify-content: space-between;
+  left: 20px;
+  bottom: 42px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+/*  */
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 200px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #eceff1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+}
+/* элементы меню */
+.menu__item1 {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #cfd8dc;
+}
+/*  */
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+/* ! burger-menu end */
+/* ! right-cont start  */
+.content__right-item {
+  height: 100vh;
+  margin-bottom: 30px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 15%;
+  width: 300px;
+}
+.content__right {
+  width: 65px;
+}
+.container3 {
+  float: right;
+}
+.container2 {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+/* ! right-cont end */
+/* ! search start */
+.nav input {
+  width: 282px;
+  height: 13px;
+  font: 16px/24px Arial, sans-serif;
+  padding: 8px 20px 8px 44px;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-left: 36%;
+}
+
+::-webkit-input-placeholder {
+  color: rgb(125, 122, 122);
+  padding-left: 20px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.search__magnifier {
+  position: absolute;
+  background-size: 100%;
+  height: 19px;
+  width: 19px;
+  top: 27.5px;
+  border: none;
+  background: no-repeat;
+  margin-left: 11px;
+}
+
+/* ! search end */
